@@ -65,7 +65,7 @@ holiday_hash.each do | season, holiday|
        puts "  #{holiday.to_s.split("_").map {|i| i.capitalize}.join(" ")}: #{item.join(", ")}"
      end
   end 
-arr.flatten
+arr.flatten.compact
 end
 
 def all_holidays_with_bbq(holiday_hash)
